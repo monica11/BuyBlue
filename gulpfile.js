@@ -8,6 +8,9 @@ var uglify = require('gulp-uglify'),
     browserSync = require('browser-sync'),
     reload = browserSync.reload;
 
+var deploy      = require('gulp-gh-pages'); 
+
+
 
 // Load all gulp plugins automatically
 // and attach them to the `plugins` object
@@ -226,12 +229,11 @@ gulp.task('watch', function(){
     gulp.watch("src/*.html", ['bs-reload']);
 });
 
-
-
-var s3 = require("gulp-s3");
-gulp.task('deploy', ['build'], function () {
-    return gulp.src('./dist/**/*').pipe(s3(require('./aws.json')));
-});
-
 // deploys
 gulp.task('default',  ['scripts', 'less','browser-sync','watch']);
+
+/**  * Push build to gh-pages  */ 
+gulp.task('deploy', function () {   
+    return gulp.src("./dist/**/*")     
+    .pipe(deploy()) 
+});

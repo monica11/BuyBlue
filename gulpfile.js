@@ -233,7 +233,7 @@ gulp.task('watch', function(){
 gulp.task('default',  ['scripts', 'less','browser-sync','watch']);
 
 /**  * Push build to gh-pages  */ 
-gulp.task('deploy', function () {   
+gulp.task('deploy', ['build'], function () {
     return gulp.src("./dist/**/*")     
     .pipe(deploy()) 
 });

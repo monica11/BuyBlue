@@ -43,6 +43,10 @@
     }
   },
   "homepage": "",
+  "license": {
+    "type": "MIT",
+    "url": ""
+  },
   "name": "BuyBlue",
   "private": true,
   "scripts": {

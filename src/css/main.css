@@ -1,0 +1,710 @@
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
+html {
+  color: #222;
+  font-size: 62.5%;
+  line-height: 1.4;
+}
+body {
+  margin: 0px auto;
+}
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical;
+}
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+@media print, (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+}
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */
+}
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
+}
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */
+}
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */
+}
+/**********
+iPad 3
+**********/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Styles */
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Styles */
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* Styles */
+}
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
+}
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Styles */
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Styles */
+}
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+}
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+}
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+}
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+}
+.navBar {
+  background-color: #FFF;
+  min-width: 100%;
+}
+.navBar .logo {
+  font-family: PT Serif;
+  font-weight: bold;
+  font-size: 26px;
+  font-style: italic;
+  color: #1f4ba5;
+  padding: 25px 10px;
+}
+.wrapper {
+  margin: 0 auto;
+  padding: 0 2%;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+nav ul li {
+  padding: 0px;
+}
+nav ul li:hover {
+  color: #ebeee ee;
+}
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+  transition: all .5s ease;
+}
+nav ul .mybag-count {
+  border: 2px solid #1f4ba5;
+  background-color: #1f4ba5;
+  border-radius: 50%;
+  color: white;
+  display: inline-block;
+  font-size: 1.2rem;
+  height: 17px;
+  right: 0px;
+  line-height: 15px;
+  text-align: center;
+  top: 0;
+  width: 17px;
+  position: absolute;
+}
+nav li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+nav .left-navigation {
+  width: 70%;
+}
+nav #menu-toggle {
+  display: none;
+}
+nav .label-toggle {
+  display: none;
+}
+nav .wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .navBar ul a {
+    color: #FFF;
+  }
+  .navBar .left-navigation {
+    width: 100% !important;
+  }
+  .navBar .navbar-nav {
+    margin: 0px;
+  }
+  .navBar ul {
+    background-color: #000;
+    display: block;
+    height: 0;
+    list-style-type: none;
+    opacity: 0;
+    text-align: center;
+    transition: all 1s ease;
+    width: 100%;
+    visibility: hidden;
+  }
+  .navBar li {
+    border-bottom: 2px solid #FFF;
+    color: #FFF;
+    display: block;
+    font-size: 1.5rem;
+    padding: 2em 0;
+  }
+  .navBar #menu-toggle:checked ~ ul {
+    opacity: 1;
+    height: 100%;
+    visibility: visible;
+  }
+  .navBar .label-toggle {
+    background: linear-gradient(to bottom, #000 0%, #000 20%, transparent 20%, transparent 40%, #000 40%, #000 60%, transparent 60%, transparent 80%, #000 80%, #000 100%);
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 35px;
+    margin-top: 1em;
+    width: 35px;
+  }
+  .navBar .wrapper {
+    display: block;
+  }
+}
+body {
+  background-color: #FFF;
+  color: #000;
+  font-family: 'Varela Round', sans-serif;
+  line-height: 2em;
+}
+.fullWidthElement {
+  display: inline-block;
+  width: 100%;
+}
+.removePadding {
+  padding: 0px;
+}
+.removeMargin {
+  margin: 0px;
+}
+.content-wrapper {
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+.content-wrapper .common-segment-slider {
+  display: flex;
+}
+.content-wrapper .common-segment-slider .main-slider-wrapper {
+  width: 70%;
+  display: inline-block;
+  float: left;
+  min-height: 23vh;
+}
+.content-wrapper .common-segment-slider .main-slider-wrapper img {
+  max-height: 69vh;
+  height: 69vh;
+}
+.content-wrapper .common-segment-slider .main-slider-wrapper .carousel-content {
+  position: absolute;
+  padding-right: 14%;
+  bottom: 10%;
+  right: 0px;
+  left: 60%;
+  text-align: right;
+  top: 20%;
+  z-index: 20;
+  color: white;
+}
+.content-wrapper .common-segment-slider .main-slider-wrapper .carousel-content .description1 {
+  font-family: Oswald;
+  color: #1f4ba5;
+  font-size: 16px;
+}
+.content-wrapper .common-segment-slider .main-slider-wrapper .carousel-content .description2 {
+  padding-top: 20px;
+  font-family: "Varela Round";
+  font-size: 33px;
+  line-height: 1.3;
+  color: #000;
+}
+.content-wrapper .common-segment-slider .main-slider-wrapper .carousel-content .description3 {
+  color: #9d9d9d;
+  font-size: 17px;
+  padding-top: 18px;
+  margin-bottom: 10px;
+}
+.content-wrapper .common-segment-slider .main-slider-wrapper .carousel-content .shopButton {
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  border: none;
+  padding: 8px;
+  padding-left: 10px;
+  width: 60%;
+  position: relative;
+  background: #1f4ba5;
+  color: white;
+  text-decoration: none;
+}
+.content-wrapper .common-segment-slider .main-slider-wrapper .carousel-content .shopButton .price {
+  border-left: 1px solid #ccc;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+.content-wrapper .common-segment-slider .feature-wrapper {
+  width: 30%;
+  display: inline-block;
+  float: right;
+}
+.content-wrapper .common-segment-slider .flip-container .front,
+.content-wrapper .common-segment-slider .flip-container .back {
+  width: 100%;
+  height: 100%;
+  min-height: 23vh;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  top: 0;
+  left: 0;
+}
+.content-wrapper .common-segment-slider .flip-container .front img,
+.content-wrapper .common-segment-slider .flip-container .back img {
+  height: 100%;
+  width: 100%;
+}
+.content-wrapper .common-segment-slider .flip-container .front {
+  z-index: 2;
+  position: absolute;
+}
+.content-wrapper .common-segment-slider .flip-container .back {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  background: #f8f8f8;
+  border-left: 8px solid #0000AA;
+}
+.content-wrapper .common-segment-slider .flip-container .flipper {
+  position: relative;
+  -webkit-transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transition: 0.6s;
+  -moz-transform-style: preserve-3d;
+  -o-transition: 0.6s;
+  -o-transform-style: preserve-3d;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+}
+.content-wrapper .common-segment-slider .flip-container:hover .flipper,
+.content-wrapper .common-segment-slider .flip-container.hover .flipper {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
+}
+#featuredProducts .products-row {
+  display: flex;
+  margin: 0px;
+}
+#featuredProducts .products-row a {
+  color: #000;
+  text-decoration: none;
+}
+#featuredProducts .products-row .section-title {
+  font-size: 28px;
+  line-height: 1.6;
+  color: #1f4ba5;
+  font-family: Oswald;
+  font-weight: bold;
+}
+#featuredProducts .products-row .subtitle {
+  color: #aeaeae;
+  padding: 10% 30%;
+}
+#featuredProducts .products-row .product-col {
+  padding: 40px;
+  text-align: center;
+  border-bottom: 1px solid #ebeeee;
+  border-left: 1px solid #ebeeee;
+}
+#featuredProducts .products-row .product-col:hover {
+  background-color: #fbfbfb;
+}
+#featuredProducts .products-row .product-col:first-child {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-left: none;
+}
+#featuredProducts .products-row .product-col .title {
+  font-size: 16px;
+  min-height: 15vh;
+}
+#featuredProducts .products-row .product-col img {
+  background-color: #FFFFFF;
+  float: left;
+  height: 94px;
+  text-align: center;
+  width: 100%;
+  height: 30vh;
+}
+#featuredProducts .products-row .product-col .price {
+  font-family: Oswald;
+  padding-top: 45px;
+  display: inline-block;
+  width: 100%;
+}
+#featuredProducts .products-row .product-col .price.sale {
+  color: red;
+}
+#featuredProducts .products-row .product-col .price .old-price {
+  color: grey;
+  float: right;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+#featuredProducts .products-row .product-label {
+  color: white;
+  font-size: 10px;
+  font-weight: bolder;
+  font-family: Oswald;
+  padding-left: 4px;
+  display: inline-block;
+  height: 26px;
+  position: absolute;
+  width: 30px;
+  bottom: 45px;
+  left: 28px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+#featuredProducts .products-row .product-label:before {
+  border-top: 13px solid transparent;
+  border-bottom: 13px solid transparent;
+  content: "";
+  height: 0;
+  position: absolute;
+  left: 30px;
+  width: 0;
+}
+#featuredProducts .products-row .product-label.sale {
+  background-color: red;
+}
+#featuredProducts .products-row .product-label.sale:before {
+  border-left: 14px solid red;
+}
+#featuredProducts .products-row .product-label.new {
+  background-color: limegreen;
+}
+#featuredProducts .products-row .product-label.new:before {
+  border-left: 14px solid limegreen;
+}
+#featuredProducts .products-row .product-label.hit {
+  background-color: #FAC237 ;
+}
+#featuredProducts .products-row .product-label.hit:before {
+  border-left: 14px solid #FAC237;
+}
+#brandSection {
+  font-family: oswald;
+  text-align: center;
+  display: flex;
+}
+#brandSection .brand-image-container {
+  border-bottom: 1px solid #ebeeee;
+  border-left: 1px solid #ebeeee;
+  padding: 35px;
+  justify-content: center;
+  flex-direction: column;
+  float: left;
+  width: 12.5%;
+}
+#brandSection .brand-image-container img {
+  width: 100%;
+}
+#brandSection .brand-image-container .section-title {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #1f4ba5;
+}
+#brandSection .image-text-container {
+  display: flex;
+}
+footer {
+  background: black;
+  color: #656565;
+}
+footer .navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  height: auto;
+  padding: 5px 3%;
+  margin: 0px;
+  position: relative;
+  text-align: center;
+  border-bottom: 1px solid rgba(235, 238, 238, 0.2);
+}
+footer ul li a {
+  color: white;
+}
+footer .footer-row-2 {
+  text-align: center;
+  display: flex;
+  border-bottom: 1px solid rgba(235, 238, 238, 0.2);
+}
+footer .footer-row-2 .left {
+  padding: 40px;
+  border-right: 1px solid rgba(235, 238, 238, 0.2);
+  font-style: italic;
+}
+footer .footer-row-2 .left .footer-logo {
+  font-family: PT Serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #b4b4b4;
+}
+footer .footer-row-2 .left .copyright {
+  color: #7a7a7a;
+  font-size: 16px;
+}
+footer .footer-row-2 .middle {
+  padding: 40px;
+}
+footer .footer-row-2 .middle input {
+  font-family: 'FontAwesome';
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  border: none;
+  padding: 8px;
+  width: 80%;
+  position: relative;
+  background: rgba(85, 85, 85, 0.68);
+}
+footer .footer-row-2 .middle .btn-submit {
+  color: white;
+  border-radius: 15px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  background: rgba(85, 85, 85, 0.68);
+  vertical-align: baseline;
+  border: none;
+  margin-left: -3px;
+}
+footer .footer-row-2 .middle ::-webkit-input-placeholder {
+  font-style: italic;
+  padding-left: 10px;
+}
+footer .footer-row-2 .middle .terms-row {
+  padding: 30px;
+}
+footer .footer-row-2 .middle .terms-row ul {
+  justify-content: space-around;
+  list-style-type: none;
+  display: flex;
+  padding-left: 0px;
+}
+footer .footer-row-2 .middle .terms-row ul a {
+  color: #7a7a7a;
+}
+footer .footer-row-2 .right {
+  border-left: 1px solid rgba(235, 238, 238, 0.2);
+  font-size: 30px;
+}
+footer .footer-row-2 .right .section {
+  padding: 40px;
+  justify-content: space-around;
+  display: flex;
+}
+footer .footer-row-2 .right .section a {
+  color: #7a7a7a;
+}
+footer .footer-row-2 .right .first {
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(235, 238, 238, 0.2);
+}
+/**
+* Media queries for responsiveness
+**/
+@media screen and (max-width: 768px) {
+  .flip-container:hover .flipper,
+  .flip-container.hover .flipper {
+    -webkit-transform: none;
+    transform: none;
+  }
+  .navBar .logo {
+    width: 20%;
+    display: inline-block;
+  }
+  .content-wrapper .common-segment-slider {
+    display: block;
+  }
+  .content-wrapper .common-segment-slider .main-slider-wrapper {
+    width: 100%;
+  }
+  .content-wrapper .common-segment-slider .main-slider-wrapper .carousel-content {
+    left: 30%;
+    word-wrap: break-word;
+  }
+  .content-wrapper .common-segment-slider .feature-wrapper {
+    width: 100%;
+  }
+  .content-wrapper .flip-container:hover {
+    transform: none;
+  }
+  #featuredProducts .products-row {
+    display: block;
+  }
+  #brandSection {
+    display: block !important;
+  }
+  #brandSection .brand-image-container {
+    width: 25% !important;
+  }
+}
+@media screen and (max-width: 560px) {
+  #brandSection .brand-image-container {
+    width: 50% !important;
+  }
+  footer .terms-row ul {
+    display: block !important;
+  }
+  footer .footer-row-2,
+  footer .navbar-nav {
+    display: block;
+  }
+}

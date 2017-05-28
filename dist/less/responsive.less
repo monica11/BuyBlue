@@ -1,0 +1,63 @@
+/**
+* Media queries for responsiveness
+**/
+@media screen and (max-width: 768px) {
+    .flip-container:hover .flipper,
+    .flip-container.hover .flipper {
+        -webkit-transform: none;
+        transform: none;
+    }
+    .navBar .logo {
+        width: 20%;
+        display: inline-block;
+    }
+
+    .content-wrapper {
+        .common-segment-slider {
+            display: block;
+            .main-slider-wrapper {
+                width: 100%;
+                .carousel-content{
+                    left:30%;
+                    word-wrap: break-word;
+                }
+            }
+            .feature-wrapper {
+                width: 100%;
+            }
+        }
+        .flip-container:hover {
+            transform: none;
+        }
+    }
+
+    #featuredProducts {
+        .products-row {
+            display: block;
+        }
+    }
+    #brandSection {
+        display: block !important;
+        .brand-image-container {
+            width: 25% !important;
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    #brandSection {
+        .brand-image-container {
+            width: 50% !important;
+        }
+    }
+    footer {
+        .terms-row ul {
+            display: block !important;
+        }
+    }
+    footer {
+        .footer-row-2, .navbar-nav {
+            display: block;
+        }
+    }
+}
